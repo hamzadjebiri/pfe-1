@@ -42,9 +42,9 @@ class PropositionsController extends Controller
     {
         //
 
-        $Proposition=DB::table('Propositions');
+        $Proposition=DB::table('Propositions')
 
-                      $Proposition->insert([
+                        ->insert([
 
                         'Proposition_commune' =>$request->input('Proposition_commune') ,
                         'Proposition_wilaya' =>$request->input('Proposition_wilaya') ,
